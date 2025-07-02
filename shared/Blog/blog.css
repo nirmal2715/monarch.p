@@ -1,0 +1,200 @@
+.cards {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-around;
+  padding-left: 60px;
+  padding-right: 50px;
+}
+
+.card {
+  width: 280px;
+  height: 500px;
+  aspect-ratio: 3 / 4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+
+}
+
+.card .card-img {
+  width: 280px;
+  height: 200px;
+  /* object-fit: cover; */
+
+}
+
+.card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-text {
+  padding-bottom: 20px;
+  word-spacing: 5px;
+  color: black;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  /* font-size: larger; */
+  /* font-weight: bold; */
+}
+
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  /* horizontally center */
+  margin-top: 20px;
+  /* optional */
+}
+
+
+.pagination a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.cards {
+  margin: 0;
+  padding: 20px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 280px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.card-text {
+  padding: 10px;
+  word-spacing: 5px;
+  color: black;
+  text-align: left;
+  word-spacing: 5px;
+
+  flex-grow: 1;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.pagination a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  margin: 4px;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* ========== Media Queries ========== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .cards {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    height: auto;
+  }
+
+  .pagination a {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
+
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+  .cards {
+    justify-content: space-between;
+    padding: 40px 100px;
+    gap: 30px;
+  }
+
+  .card {
+    width: 22%;
+  }
+
+  .card-text h4 {
+    font-size: 18px;
+  }
+
+  .card-text p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,231 @@
+.Content{
+
+padding: 70px;
+display: flex;
+justify-content: space-around;
+
+
+}
+.A-G{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    
+}
+.Img{
+ padding-left: 90px;
+}
+.img-text{
+    padding-left: 90px;
+    flex-wrap: wrap;
+    font-size: larger;
+    padding-right: 50px;
+}
+.slider
+      input[type="range"] {
+    width: 500px;      
+    height: 15px;    
+    accent-color: rgba(0, 89, 255, 0.363);
+    font-size: large;
+}
+.cards {
+    margin: 0%;
+    padding: 0%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+  padding: 20px;
+  /* justify-content: space-between; */
+  padding-left: 60px;
+  padding-right: 50px;
+}
+
+.card {
+  /* position: relative; */
+  width: 300px; 
+  height: 380px;
+/* justify-content: space-between; */
+  aspect-ratio: 3 / 4; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  background-color: #fff;
+
+}
+
+.card img {
+  width: 300px;
+  height: 330px;
+  object-fit: cover;
+  display: block;
+}
+.card-text {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+.team{
+    display: flex;
+    justify-content: center;
+}
+.testimonials{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 80px;
+    padding-right: 150px;
+    padding-left: 50px;
+}
+.test{
+    display: flex;
+    /* justify-content: space-around; */
+    font-size: large;
+    color: gray;
+    gap: 40px;
+    align-items: center;
+
+}
+.block{
+    display: flex;
+    justify-content: center;
+   /* background-color:rgba(0, 0, 128, 0.815);
+    */
+   /* color: #999999; */
+   background-color: #141B25;
+   color: white;
+   align-items: center;
+   padding-left: 60px;
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+.block-1{
+    display: flex;
+justify-content: space-between;
+padding: 10px;
+align-items: center;
+gap: 50px;
+justify-content: space-around;
+font-size: large;
+font-weight: bold;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .Content {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .A-G {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .Img, .img-text {
+    padding: 0;
+    text-align: center;
+  }
+
+  .slider input[type="range"] {
+    width: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .block {
+    padding: 20px;
+  }
+
+  .block-1 {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .tes-1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .test {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .Content {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .A-G {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .block-1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .testimonials {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .slider input[type="range"] {
+    width: 100%;
+  }
+}
