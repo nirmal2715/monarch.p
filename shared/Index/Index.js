@@ -1,5 +1,5 @@
 // Inject header
-fetch('../header/header.html')
+fetch('/header/header.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById('header').innerHTML = data;
@@ -10,7 +10,7 @@ fetch('../header/header.html')
             const link = document.createElement('link');
             link.id = cssId;
             link.rel = 'stylesheet';
-            link.href = '../header/header.css';
+            link.href = '/header/header.css';
             document.head.appendChild(link);
         }
 
@@ -31,7 +31,7 @@ fetch('../header/header.html')
 
 
     function loadPageContent(page) {
-    const path = `../${page}/${page}.html`// Example: ../about/about.html
+    const path = `/${page}/${page}.html`// Example: ../about/about.html
 
     fetch(path)
         .then(res => res.text())
@@ -54,7 +54,7 @@ fetch('../header/header.html')
                 const link = document.createElement('link');
                 link.id = cssId;
                 link.rel = 'stylesheet';
-                link.href = `../${page}/${page}.css` // Example: ../about/about.css
+                link.href = `/${page}/${page}.css` // Example: ../about/about.css
                 link.setAttribute('data-dynamic-css', 'true');
                 document.head.appendChild(link);
             }
@@ -107,7 +107,7 @@ fetch('../header/header.html')
 
 
 // Inject footer
-fetch('../footer/footer.html')
+fetch('/footer/footer.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById('footer').innerHTML = data;
@@ -116,7 +116,7 @@ fetch('../footer/footer.html')
             const link = document.createElement('link');
             link.id = cssId;
             link.rel = 'stylesheet';
-            link.href = '../footer/footer.css';
+            link.href = '/footer/footer.css';
             document.head.appendChild(link);
         }
     });
